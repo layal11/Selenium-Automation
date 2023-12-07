@@ -5,11 +5,11 @@ At its core, Selenium provides a set of tools to interact with web browsers, ena
 
 ### Core Concepts
 - <b>WebDriver API</b> like Chrome and Firefox.
-- <b>Locators</b> such as buttons or text fields.
-- <b>Shadow Path</b>
-- <b>XPath</b>
-- <b>Hidden dropdowns</b>
-- <b>File Upload</b> using sendKeys and AutoIT
-- <b>Keyboard events</b>
-- <b>Dropdowns</b>
-- <b>Navigation</b>
+- <b>Locators</b> such as XPath, cssSelector, DOM, id, class.
+- <b>UI classes</b> such as checkboxes, buttons and radio buttons.
+- <b>Shadow Path</b>.
+- <b>Hidden dropdowns</b>.
+- <b>File Upload</b> using sendKeys and AutoIT.
+- <b>Keyboard events</b>.
+- <b>Navigation</b>.
+- <b>Web elements</b>.
