@@ -13,3 +13,4 @@ At its core, Selenium provides a set of tools to interact with web browsers, ena
 - <b>Keyboard events</b>.
 - <b>Navigation</b>.
 - <b>Web elements</b>.
+- <b>Documentation</b>.
