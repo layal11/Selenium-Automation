@@ -55,8 +55,8 @@ public class github_signUp2 {
         driver.get(githublink);
 
         //Explicit wait
-        WebDriverWait waitElement = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebDriverWait waitBtn = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait waitElement = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait waitBtn = new WebDriverWait(driver, Duration.ofMinutes(5));
 
         //navigate to signUp url
         String signUpString = "a[href='/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home']";
@@ -83,7 +83,8 @@ public class github_signUp2 {
 
         //email btn
         String contEmailBtnString = "button[data-optimizely-event='click.signup_continue.email']";
-        waitBtn.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(contEmailBtnString)));
+
+        waitElement.until(ExpectedConditions.elementToBeClickable(By.cssSelector(contEmailBtnString)));
         WebElement continueEmailBtn = driver.findElement(By.cssSelector(contEmailBtnString));
         if (continueEmailBtn.isEnabled()) {
             continueEmailBtn.click();
@@ -97,22 +98,26 @@ public class github_signUp2 {
 
         //pass btn
         String contPassBtnString = "button[data-optimizely-event='click.signup_continue.password']";
+        waitElement.until(ExpectedConditions.elementToBeClickable(By.cssSelector(contPassBtnString)));
         WebElement continuePassBtn = driver.findElement(By.cssSelector(contPassBtnString));
         if (continueEmailBtn.isEnabled()) {
             continuePassBtn.click();
         }
 
-        //userMame
+        //userName
         waitElement.until(ExpectedConditions.visibilityOfElementLocated(By.id("login")));
         WebElement userNameElt = driver.findElement(By.id("login"));
         userNameElt.sendKeys(userName);
 
-        //userMame btn
+        //userName btn
         String contUserNameBtnString = "button[data-optimizely-event='click.signup_continue.username']";
+        waitElement.until(ExpectedConditions.elementToBeClickable(By.cssSelector(contUserNameBtnString)));
         WebElement contUserNameBtn = driver.findElement(By.cssSelector(contUserNameBtnString));
         if (continueEmailBtn.isEnabled()) {
             contUserNameBtn.click();
         }
+
+        Thread.sleep(Duration.ofSeconds(2));
 
         //optIn
         waitElement.until(ExpectedConditions.visibilityOfElementLocated(By.id("opt_in")));
@@ -121,6 +126,7 @@ public class github_signUp2 {
 
         //optIn btn
         String contcheckboxString = "button[data-optimizely-event='click.signup_continue.opt-in']";
+        waitElement.until(ExpectedConditions.elementToBeClickable(By.cssSelector(contcheckboxString)));
         WebElement contcheckboxBtn = driver.findElement(By.cssSelector(contcheckboxString));
         if (continueEmailBtn.isEnabled()) {
             contcheckboxBtn.click();
