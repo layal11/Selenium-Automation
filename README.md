@@ -14,3 +14,7 @@ At its core, Selenium provides a set of tools to interact with web browsers, ena
 - <b>Navigation</b>.
 - <b>Web elements</b>.
 - <b>Documentation</b>.
+
+### Frameworks and Tools
+- <b>Maven</b>
+- <b>TestNG</b> (grouping, parameters, data providers, parallel testing, dependecies)
