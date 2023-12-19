@@ -1,0 +1,21 @@
+{
+  "githubSignIn": "https://github.com/signup?source=login",
+  "github": "https://github.com",
+  "signInCredentials": [
+    {
+      "user1": "email1@gmail.com",
+      "pass1": "Pass1"
+    },
+    {
+      "user2": "email2@gmail.com",
+      "pass2": "Pass2"
+    }
+  ],
+  "signUpCredentials": [
+    {
+      "email": "newUsernewUser@gmail.com",
+      "pass": "newPassnewPass1",
+      "userName": "layalDemo"
+    }
+  ]
+}

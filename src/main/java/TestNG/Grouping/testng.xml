@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/projects/QA Selenium/Selenium-Automation/src/main/java/TestNG/grouping.java">
+        <groups>
+            <run>
+                <include name="negative"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestNG.Grouping.grouping"/>
+        </classes>
+    </test>
+</suite>
