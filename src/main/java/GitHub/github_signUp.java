@@ -14,23 +14,6 @@ import java.time.Duration;
 
 
 public class github_signUp {
-    protected JSONObject getData(String fileName) {
-        String filePath = "src/assets/resources/.json";
-        JSONObject jsonObj = null;
-        try {
-            FileReader reader = new FileReader(filePath);
-            JSONParser jsonParser = new JSONParser();
-            Object obj = jsonParser.parse(reader);
-            jsonObj = (JSONObject) obj;
-            System.out.print(jsonObj.toJSONString());
-            //System.out.print(jsonObj.getOrDefault("username", "username1"));
-        } catch (Exception ex) {
-//            ex.printStackTrace();
-            System.out.println(ex.getMessage());
-        }
-        return jsonObj;
-    }
-
     public static void main(String[] args) {
         // WEB DRIVERS
         System.setProperty("webdriver.chrome.driver", "C:/selenium jar and drivers/chrome driver/chromedriver.exe");
