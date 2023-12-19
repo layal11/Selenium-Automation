@@ -1,7 +1,8 @@
 ## Selenium-Automation
 
-<b>Java Selenium</b> is a powerful combination of the Java programming language and the Selenium WebDriver framework, widely used for automating web applications.
-At its core, Selenium provides a set of tools to interact with web browsers, enabling developers and testers to automate repetitive tasks such as form filling, button clicking and data extraction.
+Welcome to my GitHub repository dedicated to Selenium automation!
+This repository includes the essential building blocks for Selenium automation, covering key concepts, TestNG framework and Maven tool.
+
 
 ### Core Concepts
 - <b>WebDriver API</b> like Chrome and Firefox.
@@ -16,5 +17,5 @@ At its core, Selenium provides a set of tools to interact with web browsers, ena
 - <b>Documentation</b>.
 
 ### Frameworks and Tools
-- <b>Maven</b>
-- <b>TestNG</b> (grouping, parameters, data providers, parallel testing, dependecies)
+- <b>Maven</b>.
+- <b>TestNG</b> (annotations, grouping, parameters, data providers, parallel testing, dependecies, generate reports).
