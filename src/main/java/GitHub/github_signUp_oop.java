@@ -24,7 +24,7 @@ import java.time.Duration;
 //-----------------------------------------------------------------------------------------
 
 
-public class github_signUp2 {
+public class github_signUp_oop {
     public JSONObject getData(String fileName) {
         JSONObject myJsonObj = null;
         try {
@@ -48,7 +48,7 @@ public class github_signUp2 {
         driver.manage().window().maximize();
 
         //json
-        github_signUp2 mainClass = new github_signUp2();
+        github_signUp_oop mainClass = new github_signUp_oop(); //instance of a class (object)
         JSONObject data = mainClass.getData("src/main/java/Assets/Files/.json");
         String githublink = (String) data.get("github"); //type casting
 
