@@ -5,7 +5,7 @@ This repository includes the essential building blocks for Selenium automation, 
 
 
 ### Core Concepts
-- <b>WebDriver API</b> like Chrome and Firefox.
+- <b>WebDriver API</b>.
 - <b>Locators</b> such as XPath, cssSelector, DOM, id, class.
 - <b>UI classes</b> such as checkboxes, buttons and radio buttons.
 - <b>Shadow Path</b>.
